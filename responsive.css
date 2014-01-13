@@ -1,0 +1,25 @@
+/* Greater than 850px */
+@media only screen and (min-width: 850px) {
+	#mobile-menu, #mobile-icon {
+		display: none;
+	}
+}
+
+/* Less than 850px */
+@media only screen and (max-width: 849px) {
+	.non-mobile {
+		display: none;
+	}
+
+	#mobile-icon {
+		margin-right: 0;
+	}
+
+	header h1 {
+		margin-left: 8px;
+	}
+
+	nav {
+		margin-right: 0;
+	}
+}

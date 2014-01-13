@@ -1,0 +1,250 @@
+/* General styling */
+body {
+	font-family: 'Helvetica Neue', Arial;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #888888;
+}
+
+a:hover {
+	color: #000000;
+}
+
+article, h2 {
+	font-size: 2.0em;
+	text-shadow: 0px -1px 0px #303030;
+}
+
+article, h2, h3, h4 {
+	color: #ffffff;
+}
+
+button {
+	background-color: #aaaaaa;
+	border: none;
+	border-radius: 2px;
+	box-shadow: none;
+	color: #ffffff;
+	font-size: 0.8em;
+	padding: 10px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #888888;
+}
+
+section {
+	margin-bottom: 15px;
+}
+
+
+/* Navigation Bar */
+header {
+	background: #ffffff;
+	box-shadow: 0px 1px 5px #888888;
+	position: fixed;
+	width: 100%;
+}
+
+header h1 {
+	float: left;
+	margin-left: 40px;
+}
+
+nav {
+	margin: 5px 30px 0 0;
+	overflow: auto;
+}
+
+nav ul li {
+	font-weight: 200;
+	padding-right: 10px;
+}
+
+/* Consolidated */
+.top-section, .muse, .beer-tap, .testimonials, .reserve-now {
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.testimonials h2, .muse h2, .muse h3 {
+	color: #000000;
+	font-weight: 100;
+	letter-spacing: 1px;
+	text-shadow: none;
+}
+
+/* Content */
+.top-section {
+	background: url('img/muse-home.jpg') 50% 0 no-repeat fixed;
+	background-size: 100%;
+	height: 650px; 
+  	margin: 0 auto; 
+  	position: relative;
+  	width: 100%;
+  	z-index:-1;
+}
+
+.top-section article {
+	display: none;
+	font-size: 2.5em;
+	font-weight: 100;
+	text-align: center; 
+	padding: 400px 0 0 100px;
+	width: 30%; 
+}
+
+.muse h2, .muse h3 {
+	color: #000000;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	width: 50%;
+}
+
+.muse h2 {	
+	font-size: 1.20em;
+}
+
+.muse h3 {
+	font-size: 0.50em;
+}
+
+#muse-device {
+	width: 50%;
+}
+
+.beer-tap {
+	background: url('img/beer-tap.jpeg') 50% 0 no-repeat fixed;
+	background-size: 100%;
+	height: 700px;
+	padding-top: 20px;
+}
+
+.beer-tap h2, .beer-tap p {
+	color: #ffffff;
+	font-size: 0.80em;
+	font-weight: 100;
+	margin-left: 30px;
+	width: 35%;
+}
+
+.beer-tap h2 {
+	font-weight: 200;
+	margin-top: 150px;
+}
+
+#beer-description {
+	font-size: 0.60em;
+}
+
+.testimonials {
+	height: 50%;
+	padding-bottom: 30px;
+}
+
+.testimonials img {
+	width: 60%;
+}
+
+.testimonials h2 {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.reserve-now {
+	background: url('img/muse-matt.jpg') 50% 0 no-repeat fixed;
+	background-size: 100%;
+	min-height: 450px;
+}
+
+.reserve-now h2 {
+	font-weight: 400;
+	padding-top: 100px;
+}
+
+.reserve-now button {
+	background-color: #ff2313;
+	font-size: 1.0em;
+	padding: 15px;
+}
+
+.reserve-now button:hover {
+	background-color: #ce0e00;
+}
+
+/* Footer */ 
+footer {
+	font-weight: 200;
+}
+
+footer .left {
+	float: left;
+}
+
+footer .right {
+	float: right;
+	margin-right: 30px;
+}
+
+footer .right li {
+	padding-right: 10px;
+}
+
+/* Mobile Menu */
+#mobile-icon button{
+	background: none;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#mobile-icon button:hover {
+	background: #eeeeee;
+}
+
+#mobile-icon button:focus {
+	outline: 0;
+}
+
+#mobile-menu {
+	display: none;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+	overflow: hidden;
+	padding: 0;
+}
+
+#mobile-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#mobile-menu ul li {
+	border-bottom: 1px #999999 solid;
+	display: list-item;
+	padding: 5px 0 10px 15px;
+	width: 100%;
+}
+
+#mobile-menu a:hover {
+	border: none
+}
+
+.wide-screen ul {
+	float: right;
+}
+
+
