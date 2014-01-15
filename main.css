@@ -57,7 +57,17 @@ header {
 	box-shadow: 0px 1px 5px #888888;
 	position: fixed;
 	width: 100%;
+
+	background-image: -webkit-linear-gradient(0deg, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
+	background-image: -moz-linear-gradient(0deg, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
+	background-image: linear-gradient(to right, hsla(175,100%,40%,1) 16.666667%, hsla(150,100%,40%,1) 16.666667%, hsla(150,100%,40%,1) 33.333333%, hsla(75,100%,40%,1) 33.333333%, hsla(75,100%,40%,1) 50%, hsla(25,100%,40%,1) 50%, hsla(25,100%,40%,1) 66.666667%, hsla(10,100%,40%,1) 66.666667%, hsla(10,100%,40%,1) 83.333333%, hsla(300,100%,40%,1) 83.333333%);
+	-webkit-background-size: 100% 3px;
+	-moz-background-size: 100% 3px;
+	background-size: 100% 3px;
+	background-repeat: no-repeat;
+	background-position-y: top;
 }
+
 
 header h1 {
 	float: left;
@@ -77,7 +87,7 @@ nav ul li {
 /* Consolidated */
 .top-section, .muse, .beer-tap, .testimonials, .reserve-now {
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-position: center center;
 }
 
 .testimonials h2, .muse h2, .muse h3 {
@@ -89,13 +99,9 @@ nav ul li {
 
 /* Content */
 .top-section {
-	background: url('img/muse-home.jpg') 50% 0 no-repeat fixed;
-	background-size: 100%;
-	height: 650px; 
-  	margin: 0 auto; 
-  	position: relative;
-  	width: 100%;
-  	z-index:-1;
+	background: url('img/muse-home.jpg') 50% 0 fixed;
+	background-size: cover;
+	min-height: 650px; 
 }
 
 .top-section article {
@@ -104,7 +110,7 @@ nav ul li {
 	font-weight: 100;
 	text-align: center; 
 	padding: 400px 0 0 100px;
-	width: 30%; 
+	width: 35%; 
 }
 
 .muse h2, .muse h3 {
@@ -128,8 +134,8 @@ nav ul li {
 
 .beer-tap {
 	background: url('img/beer-tap.jpeg') 50% 0 no-repeat fixed;
-	background-size: 100%;
-	height: 700px;
+	background-size: cover;
+	height: 600px;
 	padding-top: 20px;
 }
 
@@ -152,7 +158,6 @@ nav ul li {
 
 .testimonials {
 	height: 50%;
-	padding-bottom: 30px;
 }
 
 .testimonials img {
@@ -160,13 +165,14 @@ nav ul li {
 }
 
 .testimonials h2 {
+	font-size: 1.5em;
 	margin: 0 auto;
 	width: 80%;
 }
 
 .reserve-now {
 	background: url('img/muse-matt.jpg') 50% 0 no-repeat fixed;
-	background-size: 100%;
+	background-size: cover;
 	min-height: 450px;
 }
 
